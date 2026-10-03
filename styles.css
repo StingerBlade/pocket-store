@@ -5,37 +5,65 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #ffffff;
     color: #1A264F;
-    text-align: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+header {
+    background: #1A264F;
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 3px solid #3b5bb0;
+}
+
 h1 {
-    background-color: #1A264F;
-    color: white;
-    padding: 20px;
-    margin: 0;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+main {
+    flex: 1;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 20px;
 }
 
 #customer-list {
-    flex: 1;
-    padding: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-card {
+    background: #ffffff;
+    border: 1px solid #3b5bb0;
+    border-radius: 4px;
+    padding: 16px 18px;
+    text-align: left;
+}
+
+.user-card h2 {
+    font-size: 1.05rem;
+    color: #1A264F;
+    margin-bottom: 6px;
+}
+
+.user-card p {
+    font-size: 0.9rem;
+    color: #1A264F;
+    line-height: 1.5;
 }
 
 footer {
-    background-color: #1A264F;
-    color: white;
-    padding: 15px;
-    margin-top: auto;
-}
-
-footer p {
-    margin: 0;
+    background: #1A264F;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.85rem;
 }
