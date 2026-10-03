@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de usuarios</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Lista de Usuarios</h1>
+    <div id="customer-list">Cargando...</div>
+
+
+
+
+    <footer>
+        <p>Hola soy un footer</p>
+    </footer>
+    
+    <script type="module" src=".sw.js"></script>
+
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js');
+        }
+    </script>
+</body>
+
+</html>
