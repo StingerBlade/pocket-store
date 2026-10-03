@@ -9,19 +9,20 @@
 </head>
 
 <body>
-    <h1>Lista de Usuarios</h1>
-    <div id="customer-list">Cargando...</div>
+    <header>
+        <h1>Lista de Usuarios</h1>
+    </header>
 
-
-
+    <main>
+        <div id="customer-list">Cargando...</div>
+    </main>
 
     <footer>
         <p>Hola soy un footer</p>
     </footer>
-    
-    <script type="module" src=".sw.js"></script>
 
-    
+    <script src="./app.js"></script>
+
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js');
